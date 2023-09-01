@@ -44,5 +44,4 @@ func Listen(context *AppContext) {
 			log.Println("Published reply", result)
 		}
 	}()
-
 }
