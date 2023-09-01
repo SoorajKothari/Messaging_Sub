@@ -1,7 +1,7 @@
 package appContext
 
 import (
-	. "github.com/SoorajKothari/Messaging_Sub/pkg/messaging"
+	. "github.com/SoorajKothari/Messaging_Pub/pkg/messaging"
 	"github.com/go-redis/redis/v8"
 	"log"
 )
