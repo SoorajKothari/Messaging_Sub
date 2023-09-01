@@ -1,8 +1,8 @@
 package server
 
 import (
-	. "Messaging_sub.go/pkg/appContext"
-	. "Messaging_sub.go/pkg/service"
+	. "github.com/SoorajKothari/Messaging_Sub/pkg/appContext"
+	. "github.com/SoorajKothari/Messaging_Sub/pkg/service"
 	"log"
 )
 

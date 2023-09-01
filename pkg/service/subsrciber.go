@@ -1,8 +1,8 @@
 package service
 
 import (
-	. "Messaging_sub.go/pkg/appContext"
 	. "context"
+	. "github.com/SoorajKothari/Messaging_Sub/pkg/appContext"
 	"log"
 )
 
@@ -12,7 +12,7 @@ func Listen(context *AppContext) {
 
 	go func() {
 		for msg := range channel {
-			log.Println("Received message: %s\n", msg.Payload)
+			log.Println("Received message: ", msg.Payload)
 		}
 	}()
 }

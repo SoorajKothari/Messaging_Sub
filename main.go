@@ -1,8 +1,8 @@
 package main
 
 import (
-	. "Messaging_sub.go/pkg/appContext"
-	. "Messaging_sub.go/pkg/server"
+	. "github.com/SoorajKothari/Messaging_Sub/pkg/appContext"
+	. "github.com/SoorajKothari/Messaging_Sub/pkg/server"
 	"log"
 )
 

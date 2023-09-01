@@ -1,4 +1,4 @@
-module Messaging_sub.go
+module github.com/SoorajKothari/Messaging_Sub
 
 go 1.20
 
