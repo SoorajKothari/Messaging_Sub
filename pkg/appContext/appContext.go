@@ -16,7 +16,7 @@ func GetContext() (*AppContext, error) {
 		Version: "1",
 	}
 
-	client, err := InitializeRedis("localhost:6379")
+	client, err := InitializeRedis("host.docker.internal:6379")
 	if err != nil {
 		return nil, err
 	}
