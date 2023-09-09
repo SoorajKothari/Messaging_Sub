@@ -4,14 +4,14 @@ import (
 	. "context"
 	"encoding/json"
 	"fmt"
+	"github.com/SoorajKothari/Messaging_Pub/pkg/context"
 	. "github.com/SoorajKothari/Messaging_Pub/pkg/model"
-	. "github.com/SoorajKothari/Messaging_Sub/pkg/appContext"
 	"log"
 )
 
 var broadcast = make(chan Message)
 
-func Listen(context *AppContext) {
+func Listen(context *context.Context) {
 	pubsub := context.Client.Subscribe(Background(), "main")
 	channel := pubsub.Channel()
 

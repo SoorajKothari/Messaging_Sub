@@ -1,7 +1,7 @@
 package main
 
 import (
-	. "github.com/SoorajKothari/Messaging_Sub/pkg/appContext"
+	. "github.com/SoorajKothari/Messaging_Pub/pkg/context"
 	. "github.com/SoorajKothari/Messaging_Sub/pkg/server"
 	"log"
 )
@@ -14,5 +14,5 @@ func main() {
 		return
 	}
 	Start(context)
-	log.Println("App Started", context.Version)
+	log.Println("App Started", context.Name)
 }

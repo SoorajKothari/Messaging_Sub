@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: subscriber
+  namespace: sub-ns
+  labels:
+    app: subscriber
+spec:
+  selector:
+    matchLabels:
+      app: subscriber
+  template:
+    metadata:
+      name: subscriber
+      labels:
+        app: subscriber
+    spec:
+      containers:
+        - name: subscriber
+          image: subscriber:2.0
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: REDIS_HOST
+              valueFrom:
+                configMapKeyRef:
+                  key: redisHost
+                  name: sub-cm
+      restartPolicy: Always
+      
